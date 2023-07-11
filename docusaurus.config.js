@@ -32,6 +32,7 @@ async function createConfig() {
             editUrl: 'https://github.com/medzuslovjansky/interslavic.fun/edit/main/',
             editLocalizedFiles: true,
             remarkPlugins: [
+              require('./src/remark/mdx-before-after-plugin'),
               require('./src/remark/custom-directives'),
             ],
           },
